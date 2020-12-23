@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-center-web {
+    text-align: -webkit-center !important;
+}
+
+.left-16 {
+    left: 16%;
+}
+
+.right-16 {
+    right: 16%;
+}
