@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  name: "About",
+  name: "Slider",
   data() {
     return {
       images: [
@@ -36,25 +36,25 @@ export default {
       currentIndex: 0,
     };
   },
-  mounted: function() {
+  mounted() {
     this.startSlide();
   },
 
   methods: {
-    startSlide: function() {
-      this.timer = setInterval(this.next, 6000);
+    startSlide() {
+      this.timer = setInterval(this.next, 8000);
     },
 
-    next: function() {
+    next() {
       this.currentIndex += 1;
     },
-    prev: function() {
+    prev() {
       this.currentIndex -= 1;
     },
   },
 
   computed: {
-    currentImg: function() {
+    currentImg() {
       return this.images[Math.abs(this.currentIndex) % this.images.length];
     },
   },

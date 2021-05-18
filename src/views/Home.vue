@@ -19,7 +19,9 @@
               class="lg:h-64 lg:w-64 sm:h-64 sm:w-64 md:h-60 md:w-60 rounded-full object-cover opacity-100 hover:opacity-30 relative"
               :src="item.img"
             />
-            <p class="text-gray-500 font-bold absolute top-1/3 opacity-0 ">{{ item.test }}</p>
+            <p class="text-gray-500 font-bold absolute top-1/3 opacity-0 ">
+              {{ item.test }}
+            </p>
             <h5 class="text-2xl font-semibold">{{ item.title }}</h5>
             <p class="text-center mt-4">{{ item.text }}</p>
           </div>
@@ -27,15 +29,15 @@
       </div>
     </div>
 
-    <!-- About -->
-    <about />
+    <!-- Slider -->
+    <Slider/>
   </div>
 </template>
 
 <script>
-import About from "./About.vue";
+import Slider from "./Slider.vue";
 export default {
-  components: { About },
+  components: { Slider },
   name: "Home",
   data() {
     return {
