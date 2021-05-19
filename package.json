@@ -42,6 +42,20 @@
     },
     "rules": {}
   },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "vue"
+    ],
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/src/$1"
+    },
+    "transform": {
+      ".*\\.(vue)$": "<rootDir>/jest/jest-vue",
+      ".*": "babel-jest"
+    }
+  },
   "browserslist": [
     "> 1%",
     "last 2 versions",

@@ -1,4 +1,4 @@
-import App from "./../src/App.vue";
+import App from "@/App.vue";
 
 describe('App', () => {
   // Inspect the raw component options
