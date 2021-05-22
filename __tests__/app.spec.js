@@ -1,8 +1,8 @@
 import App from "@/App.vue";
 
-describe('App', () => {
+describe("App", () => {
   // Inspect the raw component options
-  it("has data", () => {
+  it("If it has data ✅", () => {
     expect(typeof App.data).toBe("function");
   });
 });
